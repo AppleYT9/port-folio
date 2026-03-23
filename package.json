@@ -1,0 +1,15 @@
+{
+  "name": "marjoballabani.me",
+  "version": "1.0.0",
+  "description": "A neo-brutalist personal portfolio",
+  "main": "index.html",
+  "scripts": {
+    "dev": "npx serve ."
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "serve": "^14.2.6"
+  }
+}
