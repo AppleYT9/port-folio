@@ -1190,7 +1190,7 @@ ${this.wrapWithColor("╰──────────────────�
     this.printToOutput(outputElement, "Opening Resume PDF...", "info");
     
     // Open the PDF in a new tab
-    window.open("Resume/MADHAN RESUME.pdf", "_blank");
+    window.open("Resume/Data_Scientist.pdf", "_blank");
   }
 
   // Mini-game - Snake game with p5.js

@@ -3645,3 +3645,360 @@ body[data-theme="dark"] .nav-lazyfire {
     padding-bottom: 0.5rem;
   }
 }
+
+/* ==========================================================================
+   NEO-BRUTALIST PROJECTS SHOWCASE & CERTIFICATIONS STYLES
+   ========================================================================== */
+
+.section-subtitle {
+  font-family: 'Space Mono', monospace;
+  font-size: 1.1rem;
+  color: var(--text);
+  margin-top: -1rem;
+  margin-bottom: 2rem;
+  opacity: 0.9;
+}
+
+/* Project Filter Buttons */
+.project-filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-bottom: 2.5rem;
+}
+
+.filter-btn {
+  font-family: 'Space Grotesk', sans-serif;
+  font-weight: 700;
+  font-size: 0.95rem;
+  padding: 0.6rem 1.25rem;
+  background: var(--bg);
+  color: var(--text);
+  border: 3px solid var(--border);
+  box-shadow: 4px 4px 0 var(--border);
+  cursor: pointer;
+  transition: all 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.filter-btn:hover {
+  transform: translate(-2px, -2px);
+  box-shadow: 6px 6px 0 var(--border);
+  background: var(--yellow);
+}
+
+.filter-btn.active {
+  background: var(--cyan);
+  transform: translate(2px, 2px);
+  box-shadow: 2px 2px 0 var(--border);
+}
+
+/* Projects Grid */
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.project-card {
+  background: var(--white);
+  border: 4px solid var(--border);
+  box-shadow: 8px 8px 0 var(--border);
+  padding: 1.75rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: all 0.25s ease;
+  position: relative;
+}
+
+.project-card:hover {
+  transform: translate(-4px, -4px);
+  box-shadow: 12px 12px 0 var(--border);
+}
+
+.project-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.project-year {
+  font-family: 'Space Mono', monospace;
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: var(--text);
+  opacity: 0.8;
+}
+
+.project-badge {
+  font-family: 'Space Mono', monospace;
+  font-size: 0.75rem;
+  font-weight: 700;
+  padding: 0.25rem 0.6rem;
+  border: 2px solid var(--border);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.badge-yellow { background: var(--yellow); }
+.badge-pink { background: var(--pink); color: #fff; }
+.badge-cyan { background: var(--cyan); }
+.badge-green { background: var(--green); }
+
+.project-title {
+  font-size: 1.35rem;
+  font-weight: 700;
+  margin-bottom: 0.85rem;
+  color: var(--text);
+  line-height: 1.3;
+}
+
+.project-description {
+  font-size: 0.95rem;
+  color: var(--text);
+  line-height: 1.5;
+  margin-bottom: 1.25rem;
+  flex-grow: 1;
+}
+
+.project-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  margin-bottom: 1.5rem;
+}
+
+.project-footer {
+  display: flex;
+  gap: 0.75rem;
+  margin-top: auto;
+}
+
+.project-btn {
+  font-family: 'Space Grotesk', sans-serif;
+  font-weight: 700;
+  font-size: 0.9rem;
+  padding: 0.5rem 1rem;
+  border: 3px solid var(--border);
+  box-shadow: 3px 3px 0 var(--border);
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.btn-code {
+  background: var(--bg);
+  color: var(--text);
+}
+
+.btn-code:hover {
+  background: var(--cyan);
+  transform: translate(-2px, -2px);
+  box-shadow: 5px 5px 0 var(--border);
+}
+
+.btn-demo {
+  background: var(--yellow);
+  color: var(--text);
+}
+
+.btn-demo:hover {
+  background: var(--pink);
+  color: #fff;
+  transform: translate(-2px, -2px);
+  box-shadow: 5px 5px 0 var(--border);
+}
+
+/* Certifications Grid */
+.certifications-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+}
+
+.cert-card {
+  background: var(--white);
+  border: 4px solid var(--border);
+  box-shadow: 6px 6px 0 var(--border);
+  padding: 1.25rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  transition: all 0.2s ease;
+}
+
+.cert-card:hover {
+  transform: translate(-3px, -3px);
+  box-shadow: 9px 9px 0 var(--border);
+  background: var(--yellow);
+}
+
+.cert-icon {
+  width: 50px;
+  height: 50px;
+  background: var(--cyan);
+  border: 3px solid var(--border);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  color: var(--text);
+  flex-shrink: 0;
+}
+
+.cert-title {
+  font-size: 1.05rem;
+  font-weight: 700;
+  margin-bottom: 0.25rem;
+  color: var(--text);
+}
+
+.cert-issuer {
+  font-family: 'Space Mono', monospace;
+  font-size: 0.85rem;
+  color: var(--text);
+  opacity: 0.8;
+}
+
+/* Project Quick-View Modal */
+.project-modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 10000;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.25s ease;
+  padding: 1rem;
+}
+
+.project-modal-overlay.active {
+  opacity: 1;
+  pointer-events: all;
+}
+
+.project-modal-card {
+  background: var(--white);
+  border: 5px solid var(--border);
+  box-shadow: 12px 12px 0 var(--border);
+  max-width: 650px;
+  width: 100%;
+  padding: 2.5rem;
+  position: relative;
+  max-height: 90vh;
+  overflow-y: auto;
+}
+
+.modal-close-btn {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  width: 40px;
+  height: 40px;
+  background: var(--pink);
+  color: #fff;
+  border: 3px solid var(--border);
+  font-size: 1.8rem;
+  font-weight: bold;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 3px 3px 0 var(--border);
+}
+
+.modal-close-btn:hover {
+  background: red;
+  transform: translate(2px, 2px);
+  box-shadow: 1px 1px 0 var(--border);
+}
+
+.modal-project-title {
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin: 0.75rem 0 1rem;
+  color: var(--text);
+}
+
+.modal-project-summary {
+  font-size: 1.05rem;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+  color: var(--text);
+}
+
+.modal-highlights {
+  background: var(--bg);
+  border: 3px solid var(--border);
+  padding: 1.25rem;
+  margin-bottom: 1.5rem;
+}
+
+.modal-highlights h4 {
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin-bottom: 0.75rem;
+
+}
+
+.modal-highlights ul {
+  list-style: none;
+  padding: 0;
+}
+
+.modal-highlights li {
+  font-size: 0.95rem;
+  margin-bottom: 0.5rem;
+  display: flex;
+  align-items: flex-start;
+  gap: 0.5rem;
+}
+
+.modal-highlights li i {
+  color: var(--green);
+  margin-top: 3px;
+}
+
+.modal-tech-stack {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 1.75rem;
+}
+
+.modal-actions {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+/* Dark mode overrides for new elements */
+body[data-theme="dark"] .project-card,
+body[data-theme="dark"] .cert-card,
+body[data-theme="dark"] .project-modal-card {
+  background: #252525;
+  color: #fff;
+}
+
+body[data-theme="dark"] .project-title,
+body[data-theme="dark"] .project-description,
+body[data-theme="dark"] .cert-title,
+body[data-theme="dark"] .modal-project-title,
+body[data-theme="dark"] .modal-project-summary {
+  color: #fff;
+}
+
+body[data-theme="dark"] .modal-highlights {
+  background: #1a1a1a;
+}
