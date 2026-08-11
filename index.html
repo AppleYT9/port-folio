@@ -383,12 +383,15 @@
                             <span class="tag"><i class="fas fa-bolt"></i> Streamlit</span>
                         </div>
                         <div class="project-footer">
-                            <button class="project-btn btn-demo" data-project="churn">
+                            <a href="https://github.com/AppleYT9" target="_blank" class="project-btn btn-demo">
                                 <i class="fas fa-play-circle"></i> Live Demo
-                            </button>
+                            </a>
                             <a href="https://github.com/AppleYT9" target="_blank" class="project-btn btn-code">
                                 <i class="fab fa-github"></i> GitHub
                             </a>
+                            <button class="project-btn btn-details" data-project="churn">
+                                <i class="fas fa-info-circle"></i> Full Details
+                            </button>
                         </div>
                     </div>
 
@@ -413,7 +416,7 @@
                             <a href="https://github.com/AppleYT9" target="_blank" class="project-btn btn-code">
                                 <i class="fab fa-github"></i> GitHub Repo
                             </a>
-                            <button class="project-btn btn-demo" data-project="traffic">
+                            <button class="project-btn btn-details" data-project="traffic">
                                 <i class="fas fa-info-circle"></i> System Specs
                             </button>
                         </div>
@@ -440,7 +443,7 @@
                             <a href="https://github.com/AppleYT9" target="_blank" class="project-btn btn-code">
                                 <i class="fab fa-github"></i> GitHub Repo
                             </a>
-                            <button class="project-btn btn-demo" data-project="retail">
+                            <button class="project-btn btn-details" data-project="retail">
                                 <i class="fas fa-info-circle"></i> System Specs
                             </button>
                         </div>
@@ -464,12 +467,15 @@
                             <span class="tag"><i class="fas fa-cloud-upload-alt"></i> Vercel</span>
                         </div>
                         <div class="project-footer">
-                            <button class="project-btn btn-demo" data-project="sanitizer">
+                            <a href="https://github.com/AppleYT9" target="_blank" class="project-btn btn-demo">
                                 <i class="fas fa-play-circle"></i> Live Demo (Vercel)
-                            </button>
+                            </a>
                             <a href="https://github.com/AppleYT9" target="_blank" class="project-btn btn-code">
                                 <i class="fab fa-github"></i> Code
                             </a>
+                            <button class="project-btn btn-details" data-project="sanitizer">
+                                <i class="fas fa-info-circle"></i> System Specs
+                            </button>
                         </div>
                     </div>
                 </div>
@@ -1386,8 +1392,9 @@
             }
         };
 
-        document.querySelectorAll('.btn-demo').forEach(btn => {
-            btn.addEventListener('click', () => {
+        document.querySelectorAll('.btn-details').forEach(btn => {
+            btn.addEventListener('click', (e) => {
+                e.preventDefault();
                 const projKey = btn.getAttribute('data-project');
                 const data = projectDetails[projKey];
                 if (!data) return;
