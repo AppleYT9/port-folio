@@ -410,8 +410,8 @@
                             <span class="tag"><i class="fas fa-bolt"></i> Streamlit</span>
                         </div>
                         <div class="project-footer">
-                            <a href="https://github.com/AppleYT9" target="_blank" class="project-btn btn-demo">
-                                <i class="fas fa-play-circle"></i> Live Demo
+                            <a href="https://customer-churn-prediction-gjimgav4xtmnycgpcvzujg.streamlit.app/" target="_blank" class="project-btn btn-demo">
+                                <i class="fas fa-play-circle"></i> Live Demo (Streamlit)
                             </a>
                             <a href="https://github.com/AppleYT9" target="_blank" class="project-btn btn-code">
                                 <i class="fab fa-github"></i> GitHub
@@ -494,7 +494,7 @@
                             <span class="tag"><i class="fas fa-cloud-upload-alt"></i> Vercel</span>
                         </div>
                         <div class="project-footer">
-                            <a href="https://github.com/AppleYT9" target="_blank" class="project-btn btn-demo">
+                            <a href="https://data-sanitizer-pro-l7lb.vercel.app/" target="_blank" class="project-btn btn-demo">
                                 <i class="fas fa-play-circle"></i> Live Demo (Vercel)
                             </a>
                             <a href="https://github.com/AppleYT9" target="_blank" class="project-btn btn-code">
@@ -1416,6 +1416,7 @@
                 year: "2026",
                 category: "Machine Learning & Explainable AI",
                 summary: "Applied SHAP feature attribution to explain per-customer churn drivers (contract type, tenure, payment method), turning a black-box classifier into an actionable retention tool.",
+                liveUrl: "https://customer-churn-prediction-gjimgav4xtmnycgpcvzujg.streamlit.app/",
                 highlights: [
                     "Built real-time churn risk-scoring model with 81.5% accuracy.",
                     "Segmented 7,000+ Telco customers into Low/Moderate/High risk tiers with live confidence scoring.",
@@ -1452,6 +1453,7 @@
                 year: "2025",
                 category: "Full-Stack AI & Data Quality",
                 summary: "Built an automated rule-based data quality scoring engine detecting missing values, duplicate entries, and IQR/z-score statistical outliers across CSV and XLSX files.",
+                liveUrl: "https://data-sanitizer-pro-l7lb.vercel.app/",
                 highlights: [
                     "Cuts manual inspection effort with instant per-column data health scoring.",
                     "Automated per-column quality reports with AI-generated fix suggestions.",
@@ -1498,6 +1500,7 @@
                             ${data.tech.map(t => `<span class="tag">${t}</span>`).join('')}
                         </div>
                         <div class="modal-actions">
+                            ${data.liveUrl ? `<a href="${data.liveUrl}" target="_blank" class="project-btn btn-demo"><i class="fas fa-play-circle"></i> Launch Live Application</a>` : ''}
                             <a href="https://github.com/AppleYT9" target="_blank" class="project-btn btn-code">
                                 <i class="fab fa-github"></i> View GitHub Repo
                             </a>
