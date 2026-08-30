@@ -1031,6 +1031,13 @@ ${this.wrapWithColor("╰──────────────────�
 
   loadSkills() {
     this.skills = {
+      "Generative AI & RAG": {
+        LangChain: 92,
+        "Vector DB (ChromaDB)": 90,
+        "Groq & Llama 3.1": 94,
+        FastAPI: 88,
+        "Explainable AI": 90,
+      },
       programming: {
         Python: 95,
         Java: 85,
