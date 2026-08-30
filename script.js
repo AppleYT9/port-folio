@@ -1005,7 +1005,7 @@ ${this.wrapWithColor("╰──────────────────�
           "Dual-mode Explainable RAG hiring platform featuring Candidate Mode & Recruiter Mode with fairness audit layer.",
         image: "image/project-fitcheck.png",
         technologies: ["React", "FastAPI", "LangChain", "ChromaDB", "Groq / Llama 3.1"],
-        demo: "https://lnkd.in/dc2ApECv",
+        demo: "https://fitcheck-rag.onrender.com/",
         repo: "https://lnkd.in/dFwJzWbf",
       },
       {
