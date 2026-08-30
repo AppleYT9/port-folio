@@ -365,6 +365,36 @@
                 </div>
 
                 <div class="projects-grid">
+                    <!-- Project: FitCheck -->
+                    <div class="project-card" data-category="fullstack">
+                        <div class="project-card-header">
+                            <span class="project-year"><i class="far fa-calendar-alt"></i> 2026</span>
+                            <span class="project-badge badge-cyan">GenAI & Explainable RAG</span>
+                        </div>
+                        <h3 class="project-title">FitCheck – Dual-Mode Explainable RAG Hiring Platform</h3>
+                        <p class="project-description">
+                            Dual-mode Explainable RAG platform featuring Candidate Mode (resume vs JDs match % & skill gaps) and Recruiter Mode (1 JD vs 10 resumes leaderboard with fairness audit layer).
+                        </p>
+                        <div class="project-tags">
+                            <span class="tag"><i class="fab fa-react"></i> React</span>
+                            <span class="tag"><i class="fas fa-bolt"></i> FastAPI</span>
+                            <span class="tag"><i class="fas fa-link"></i> LangChain</span>
+                            <span class="tag"><i class="fas fa-database"></i> ChromaDB</span>
+                            <span class="tag"><i class="fas fa-brain"></i> Groq / Llama 3.1</span>
+                        </div>
+                        <div class="project-footer">
+                            <a href="https://lnkd.in/dc2ApECv" target="_blank" class="project-btn btn-demo">
+                                <i class="fas fa-play-circle"></i> Live Demo
+                            </a>
+                            <a href="https://lnkd.in/dFwJzWbf" target="_blank" class="project-btn btn-code">
+                                <i class="fab fa-github"></i> GitHub
+                            </a>
+                            <button class="project-btn btn-details" data-project="fitcheck">
+                                <i class="fas fa-info-circle"></i> System Specs
+                            </button>
+                        </div>
+                    </div>
+
                     <!-- Project 1: SafeGo -->
                     <div class="project-card" data-category="fullstack">
                         <div class="project-card-header">
@@ -1399,6 +1429,20 @@
 
         // Project Quick-View Details Modal
         const projectDetails = {
+            fitcheck: {
+                title: "FitCheck – Dual-Mode Explainable RAG Hiring Platform",
+                year: "2026",
+                category: "GenAI & Explainable RAG",
+                summary: "Dual-mode Explainable RAG platform designed for transparent candidate-job matching. Features Candidate Mode for resume/JD compatibility analysis and Recruiter Mode for unbiased candidate ranking.",
+                liveUrl: "https://lnkd.in/dc2ApECv",
+                highlights: [
+                    "Candidate Mode: Upload resume and multiple job descriptions to compute match %, detect JD contradictions, and flag skill gaps with cited sources.",
+                    "Recruiter Mode: Upload 1 JD and up to 10 resumes to generate an auto-ranked candidate leaderboard with 'why select / why not' reasoning and interview questions.",
+                    "Fairness Audit Layer: Built-in audit layer that redacts personal demographic signals (age, gender) from evaluation logic.",
+                    "Explainable AI: Displays confidence levels and explicit reasoning chains for complete transparency."
+                ],
+                tech: ["React", "FastAPI", "LangChain", "ChromaDB", "Groq / Llama 3.1", "Sentence-Transformers", "Python"]
+            },
             safego: {
                 title: "SafeGo – Inclusive Ride Assistance & Safety Platform",
                 year: "2025",
@@ -1561,7 +1605,7 @@
                                 <p style="font-size: 0.85rem; opacity: 0.85;">Focus: End-to-End ML Pipelines, Computer Vision & Scikit-Learn</p>
                             </div>
                             <div style="display: flex; gap: 0.5rem; flex-shrink: 0;">
-                                <a href="Resume/ML_2027.pdf" target="_blank" class="project-btn btn-demo" style="padding: 0.4rem 0.8rem; font-size: 0.85rem;">View PDF</a>
+                                <a href="Resume/ML_Engineer.pdf" target="_blank" class="project-btn btn-demo" style="padding: 0.4rem 0.8rem; font-size: 0.85rem;">View PDF</a>
                             </div>
                         </div>
 

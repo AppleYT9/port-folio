@@ -1000,6 +1000,15 @@ ${this.wrapWithColor("╰──────────────────�
   loadProjects() {
     this.projects = [
       {
+        title: "FitCheck – Dual-Mode Explainable RAG",
+        description:
+          "Dual-mode Explainable RAG hiring platform featuring Candidate Mode & Recruiter Mode with fairness audit layer.",
+        image: "image/project-fitcheck.png",
+        technologies: ["React", "FastAPI", "LangChain", "ChromaDB", "Groq / Llama 3.1"],
+        demo: "https://lnkd.in/dc2ApECv",
+        repo: "https://lnkd.in/dFwJzWbf",
+      },
+      {
         title: "Property Management ERP",
         description:
           "End-to-end platform for multi-user property operations with role-based access.",
