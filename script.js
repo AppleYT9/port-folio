@@ -1006,7 +1006,7 @@ ${this.wrapWithColor("╰──────────────────�
         image: "image/project-fitcheck.png",
         technologies: ["React", "FastAPI", "LangChain", "ChromaDB", "Groq / Llama 3.1"],
         demo: "https://fitcheck-rag.onrender.com/",
-        repo: "https://lnkd.in/dFwJzWbf",
+        repo: "https://github.com/AppleYT9/Fitcheck-RAG-",
       },
       {
         title: "Property Management ERP",
