@@ -1000,6 +1000,15 @@ ${this.wrapWithColor("╰──────────────────�
   loadProjects() {
     this.projects = [
       {
+        title: "Marketing Campaign A/B Test & Causal Impact",
+        description:
+          "Causal inference engine evaluating ad lift across ~588K users with PSM bias control, SRM testing & Bayesian framing.",
+        image: "image/project-causal.png",
+        technologies: ["Python", "SciPy", "Propensity Matching", "Jupyter Notebook", "Bayesian"],
+        demo: "https://github.com/AppleYT9/Marketing-Campaign-A-B-Test-Causal-Impact-Analysis",
+        repo: "https://github.com/AppleYT9/Marketing-Campaign-A-B-Test-Causal-Impact-Analysis",
+      },
+      {
         title: "FitCheck – Dual-Mode Explainable RAG",
         description:
           "Dual-mode Explainable RAG hiring platform featuring Candidate Mode & Recruiter Mode with fairness audit layer.",
@@ -1031,6 +1040,13 @@ ${this.wrapWithColor("╰──────────────────�
 
   loadSkills() {
     this.skills = {
+      "Causal Inference & Statistics": {
+        "Propensity Score Matching": 92,
+        "A/B & SRM Testing": 94,
+        "Bayesian Inference": 90,
+        "Power Analysis": 88,
+        "SciPy & Statsmodels": 92,
+      },
       "Generative AI & RAG": {
         LangChain: 92,
         "Vector DB (ChromaDB)": 90,
