@@ -168,6 +168,10 @@
                     <div class="checkpoint-dot"></div>
                     <span class="checkpoint-label">Projects</span>
                 </div>
+                <div class="checkpoint" data-section="research">
+                    <div class="checkpoint-dot"></div>
+                    <span class="checkpoint-label">Research</span>
+                </div>
                 <div class="checkpoint" data-section="experience">
                     <div class="checkpoint-dot"></div>
                     <span class="checkpoint-label">Journey</span>
@@ -189,6 +193,7 @@
                     <a href="#hero" class="nav-link">Home</a>
                     <a href="#about" class="nav-link">About</a>
                     <a href="#projects" class="nav-link">Projects</a>
+                    <a href="#research" class="nav-link">Research</a>
                     <a href="#experience" class="nav-link">Journey</a>
                     <a href="#skills" class="nav-link">Skills</a>
                     <a href="#contact" class="nav-cta">Get in Touch!</a>
@@ -442,6 +447,9 @@
                             <span class="tag"><i class="fas fa-shield-alt"></i> Safety ML</span>
                         </div>
                         <div class="project-footer">
+                            <a href="https://safego1.vercel.app/home" target="_blank" class="project-btn btn-demo">
+                                <i class="fas fa-play-circle"></i> Live Demo
+                            </a>
                             <a href="https://github.com/AppleYT9" target="_blank" class="project-btn btn-code">
                                 <i class="fab fa-github"></i> GitHub Repo
                             </a>
@@ -588,6 +596,114 @@
                             <button class="project-btn btn-details" data-project="flood">
                                 <i class="fas fa-info-circle"></i> Model Specs
                             </button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- RESEARCH & PUBLICATIONS SECTION -->
+            <section class="section" id="research">
+                <h2 class="section-title">RESEARCH & PUBLICATIONS</h2>
+                <p class="section-subtitle">Peer-reviewed machine learning research, empirical benchmarks, and published papers</p>
+
+                <div class="research-container">
+                    <div class="research-card">
+                        <div class="research-card-header">
+                            <div class="research-badges">
+                                <span class="project-year"><i class="far fa-calendar-alt"></i> October 2026</span>
+                                <span class="project-badge badge-pink">IJCSE Journal (Vol 10, Issue 5)</span>
+                                <span class="project-badge badge-green">Peer-Reviewed & Open Access</span>
+                                <span class="project-badge badge-yellow">Zenodo & OpenAIRE Indexed</span>
+                            </div>
+                            <span class="project-badge badge-cyan">DOI: 10.5281/zenodo.23140801</span>
+                        </div>
+
+                        <h3 class="research-title">SafeGo: An Intelligent and Inclusive Safety-Centric Ride-Hailing Platform with Machine Learning-Based Risk Prediction</h3>
+
+                        <div class="research-authors">
+                            <i class="fas fa-user-graduate"></i>
+                            <strong>Authors:</strong>
+                            <span>Laya K Shajan,</span>
+                            <span class="author-self">Madhan Senthilkumar</span>,
+                            <span>Harshitha Reddy Muramreddy,</span>
+                            <span>Pallavi Jakkula,</span>
+                            <span>Sai Inapakolla</span>
+                        </div>
+
+                        <div class="research-meta-grid">
+                            <div class="research-meta-item">
+                                <span class="research-meta-label"><i class="fas fa-book"></i> Journal</span>
+                                <span class="research-meta-value">International Journal of Computer Science Engineering Techniques (IJCSE)</span>
+                            </div>
+                            <div class="research-meta-item">
+                                <span class="research-meta-label"><i class="fas fa-layer-group"></i> Issue & Volume</span>
+                                <span class="research-meta-value">Volume 10 – Issue 5 | Article ID: IJCSE-V10I5P25</span>
+                            </div>
+                            <div class="research-meta-item">
+                                <span class="research-meta-label"><i class="fas fa-fingerprint"></i> Digital Object Identifier (DOI)</span>
+                                <span class="research-meta-value"><a href="https://doi.org/10.5281/zenodo.23140801" target="_blank">10.5281/zenodo.23140801</a></span>
+                            </div>
+                            <div class="research-meta-item">
+                                <span class="research-meta-label"><i class="fas fa-cube"></i> Indexing / Archive</span>
+                                <span class="research-meta-value">Zenodo (CERN) & OpenAIRE Research Graph</span>
+                            </div>
+                        </div>
+
+                        <p class="research-abstract">
+                            Conventional ride-hailing platforms treat safety and accessibility as reactionary afterthoughts (e.g., isolated SOS buttons), leaving women, elderly riders, and persons with disabilities (PWD) vulnerable and underserved. 
+                            <strong>SafeGo</strong> introduces an end-to-end architecture unifying passenger-specific ride modes (Normal, Pink, Elderly, and PWD), an embedded Random Forest machine learning risk prediction engine, accessibility-aware driver dispatch, one-time PIN ride verification, real-time telemetry monitoring, emergency SOS dispatch, and transparent route pricing into a production platform.
+                        </p>
+
+                        <div class="research-stats-grid">
+                            <div class="research-stat-card">
+                                <div class="research-stat-value">99.80%</div>
+                                <div class="research-stat-label">Model Test Accuracy</div>
+                            </div>
+                            <div class="research-stat-card">
+                                <div class="research-stat-value">99.82%</div>
+                                <div class="research-stat-label">Macro F1-Score</div>
+                            </div>
+                            <div class="research-stat-card">
+                                <div class="research-stat-value">32.27 ms</div>
+                                <div class="research-stat-label">Mean Inference Latency</div>
+                            </div>
+                            <div class="research-stat-card">
+                                <div class="research-stat-value">4 Modes</div>
+                                <div class="research-stat-label">Inclusive Ride Workflows</div>
+                            </div>
+                        </div>
+
+                        <div class="research-contributions">
+                            <h4><i class="fas fa-lightbulb"></i> Key Scientific & Architectural Contributions:</h4>
+                            <ul>
+                                <li>
+                                    <i class="fas fa-check-circle"></i>
+                                    <div><strong>Machine Learning Risk Scoring:</strong> Trained Random Forest Classifier operating on temporal, geospatial, trip-level, and passenger-profile features to categorize live trips into <em>Stable</em>, <em>Cautious</em>, or <em>High Priority</em> risk tiers (achieving 99.87% macro precision and 99.78% macro recall on 2,000 synthetic test benchmarks).</div>
+                                </li>
+                                <li>
+                                    <i class="fas fa-check-circle"></i>
+                                    <div><strong>Accessibility-Aware Driver Matching:</strong> Priority routing and dedicated dispatch criteria specifically tailored for wheelchairs, physical accommodations, and vetted drivers for elderly & female passengers.</div>
+                                </li>
+                                <li>
+                                    <i class="fas fa-check-circle"></i>
+                                    <div><strong>Zero-Trust Ride Verification & Live Telemetry:</strong> Multi-layer PIN handshake before trip commencement, active OSRM-based navigation monitoring with boundary-deviation detection, and direct administrative emergency response command center.</div>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="research-actions">
+                            <a href="https://safego1.vercel.app/home" target="_blank" class="project-btn btn-demo">
+                                <i class="fas fa-play-circle"></i> Launch Live Application (SafeGo)
+                            </a>
+                            <a href="https://zenodo.org/records/23140801" target="_blank" class="project-btn btn-zenodo">
+                                <i class="fas fa-database"></i> Zenodo Record & DOI
+                            </a>
+                            <a href="https://www.ijcsejournal.org/safego-intelligent-inclusive-safety-centric-ride-hailing-platform-machine/" target="_blank" class="project-btn btn-paper">
+                                <i class="fas fa-book-open"></i> IJCSE Journal Article
+                            </a>
+                            <a href="https://zenodo.org/records/23140801/files/SafeGo-Intelligent-Inclusive-Safety-Centric-Ride-Hailing-Platform-Machine.pdf?download=1" target="_blank" class="project-btn btn-pdf">
+                                <i class="fas fa-file-pdf"></i> Download Full Paper (PDF)
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -936,6 +1052,8 @@
                     <div class="footer-nav-compact">
                         <a href="#hero">Home</a>
                         <a href="#about">About</a>
+                        <a href="#projects">Projects</a>
+                        <a href="#research">Research</a>
                         <a href="#experience">Experience</a>
                         <a href="#skills">Skills</a>
                     </div>
@@ -1522,13 +1640,16 @@
                 title: "SafeGo – Inclusive Ride Assistance & Safety Platform",
                 year: "2025",
                 category: "Full-Stack MERN & ML Integration",
-                summary: "Architected and deployed a full-stack MERN application with role-based access control, multilingual modules, real-time Firebase sync, and geospatial safety scoring powered by Random Forest.",
+                summary: "Architected and deployed a full-stack MERN application with role-based access control, multilingual modules, real-time Firebase sync, and geospatial safety scoring powered by Random Forest. Research paper published in IJCSE Journal and indexed on Zenodo.",
+                liveUrl: "https://safego1.vercel.app/home",
                 highlights: [
-                    "Supports PWD, women, elderly, and general users across distinct workflows.",
+                    "Peer-reviewed & published research paper in International Journal of Computer Science Engineering Techniques (IJCSE, Vol 10, Issue 5, 2026).",
+                    "Random Forest Classifier achieving 99.80% risk-prediction accuracy and 32.27 ms mean inference latency.",
+                    "Supports PWD, women, elderly, and general users across 4 distinct inclusive workflows.",
                     "RESTful APIs for live route navigation, distance calculation, and ETA tracking using OpenStreetMap and OSRM.",
                     "Embedded Random Forest Classifier & Regressor for geospatial safety scoring via a Python inference layer."
                 ],
-                tech: ["MERN Stack", "Firebase", "OpenStreetMap", "OSRM", "Python", "Random Forest"]
+                tech: ["MERN Stack", "Firebase", "OpenStreetMap", "OSRM", "Python", "Random Forest", "Zenodo / DOI"]
             },
             churn: {
                 title: "Customer Churn Prediction & Retention Platform",
@@ -1766,7 +1887,7 @@
             progressBarFill.style.width = progress + '%';
 
             // Update active checkpoint based on scroll position
-            const sections = ['hero', 'about', 'projects', 'experience', 'skills', 'certifications', 'contact'];
+            const sections = ['hero', 'about', 'projects', 'research', 'experience', 'skills', 'certifications', 'contact'];
             let activeIndex = 0;
 
             sections.forEach((sectionId, index) => {

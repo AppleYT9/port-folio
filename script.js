@@ -208,6 +208,8 @@ class TerminalResume {
       "contact",
       "clear",
       "projects",
+      "research",
+      "publications",
       "skills-visual",
       "game",
       "exit-game",
@@ -478,6 +480,10 @@ class TerminalResume {
       case "projects":
         this.showProjects();
         break;
+      case "research":
+      case "publications":
+        this.showResearch(outputElement);
+        break;
       case "skills-visual":
         this.showSkillsVisualization();
         break;
@@ -590,6 +596,9 @@ class TerminalResume {
       this.wrapWithColor("• projects", "#98fb98") +
       "   " +
       this.wrapWithColor("View my project showcase\n", "#ffffff") +
+      this.wrapWithColor("• research", "#98fb98") +
+      "   " +
+      this.wrapWithColor("View published research paper & benchmarks\n", "#ffffff") +
       this.wrapWithColor("• skills-visual", "#98fb98") +
       " " +
       this.wrapWithColor("Show skills visualization\n", "#ffffff") +
@@ -1000,6 +1009,15 @@ ${this.wrapWithColor("╰──────────────────�
   loadProjects() {
     this.projects = [
       {
+        title: "SafeGo – Inclusive Ride Assistance & Safety Platform",
+        description:
+          "Production MERN & ML platform with Random Forest risk scoring (99.80% acc) and 4 inclusive ride modes for PWD, women & elderly.",
+        image: "image/project-causal.png",
+        technologies: ["MERN Stack", "Random Forest", "Firebase", "OSRM", "Python"],
+        demo: "https://safego1.vercel.app/home",
+        repo: "https://github.com/AppleYT9",
+      },
+      {
         title: "Marketing Campaign A/B Test & Causal Impact",
         description:
           "Causal inference engine evaluating ad lift across ~588K users with PSM bias control, SRM testing & Bayesian framing.",
@@ -1167,6 +1185,28 @@ ${this.wrapWithColor("╰──────────────────�
       )
       .join("");
     this.showModal(this.projectsModal);
+  }
+
+  // Research showcase
+  showResearch(outputElement) {
+    const researchText =
+      this.wrapWithColor("RESEARCH & PUBLICATIONS\n", "#00ffff") +
+      this.wrapWithColor("=========================================\n\n", "#666666") +
+      this.wrapWithColor("Title: ", "#ffd93d") +
+      "SafeGo: An Intelligent and Inclusive Safety-Centric Ride-Hailing Platform with Machine Learning-Based Risk Prediction\n\n" +
+      this.wrapWithColor("Journal: ", "#ffd93d") +
+      "International Journal of Computer Science Engineering Techniques (IJCSE), Vol 10, Issue 5 (Oct 2026)\n" +
+      this.wrapWithColor("DOI: ", "#ffd93d") +
+      "10.5281/zenodo.23140801\n" +
+      this.wrapWithColor("Authors: ", "#ffd93d") +
+      "Laya K Shajan, Madhan Senthilkumar, Harshitha Reddy Muramreddy, Pallavi Jakkula, Sai Inapakolla\n\n" +
+      this.wrapWithColor("Benchmark Results: ", "#ffd93d") +
+      "99.80% Test Accuracy, 99.82% Macro F1, 32.27 ms mean latency\n\n" +
+      this.wrapWithColor("Direct Links:\n", "#00ffff") +
+      "• Live App:  https://safego1.vercel.app/home\n" +
+      "• Zenodo:    https://zenodo.org/records/23140801\n" +
+      "• Journal:   https://www.ijcsejournal.org/safego-intelligent-inclusive-safety-centric-ride-hailing-platform-machine/\n";
+    this.printToOutput(outputElement, researchText, "info");
   }
 
   // Skills visualization
